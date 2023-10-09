@@ -1,0 +1,723 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+main .form .leftSide > div .icon, main .whyus .iconCard .icon, main .numbers .row > *, footer .bottom-part .media ul li a, header nav .navigation-bar .hamburger-menu, header nav .navigation-bar > ul > li, header nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+:not(h1, h2, h3, h4, h5, h6) {
+  font-family: "Open Sans";
+  font-size: 15px;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+}
+header nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .logo a h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #5fcf80;
+}
+header nav .navigation-bar {
+  flex-wrap: nowrap;
+}
+header nav .navigation-bar > ul {
+  display: flex;
+  column-gap: 25px;
+}
+header nav .navigation-bar > ul > li {
+  color: #37423b;
+  font-weight: 500;
+  transition: 0.5s;
+}
+header nav .navigation-bar > ul > li a {
+  transition: 0.5s;
+  color: #37423b;
+}
+header nav .navigation-bar > ul > li a:hover {
+  color: #5fcf80;
+}
+header nav .navigation-bar > ul > li.dropdown {
+  white-space: nowrap;
+  position: relative;
+}
+header nav .navigation-bar > ul > li.dropdown ul {
+  position: absolute;
+  width: 200%;
+  color: #37423b;
+  background-color: white;
+  box-shadow: rgba(6, 6, 6, 0.22) 0px 3px 8px;
+  border-radius: 5px;
+  padding: 10px 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  left: 0;
+  top: 150%;
+}
+header nav .navigation-bar > ul > li.dropdown ul > li {
+  padding: 10px 20px;
+}
+header nav .navigation-bar > ul > li.dropdown ul > li.deepdropdown ul {
+  position: absolute;
+  width: 100%;
+  color: #37423b;
+  background-color: white;
+  box-shadow: rgba(6, 6, 6, 0.22) 0px 3px 8px;
+  border-radius: 5px;
+  padding: 10px 0;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  left: 80%;
+  top: 22.5%;
+}
+header nav .navigation-bar > ul > li.dropdown ul > li.deepdropdown ul li:hover {
+  color: #5fcf80;
+}
+header nav .navigation-bar > ul > li.dropdown ul > li.deepdropdown:hover > ul {
+  left: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+header nav .navigation-bar > ul > li.dropdown ul > li:hover {
+  color: #5fcf80;
+}
+header nav .navigation-bar > ul > li.dropdown:hover > ul {
+  top: 150%;
+  visibility: visible;
+  opacity: 1;
+}
+header nav .navigation-bar > ul > li:hover {
+  color: #5fcf80;
+}
+header nav .navigation-bar .hamburger-menu {
+  margin-left: 20px;
+}
+header nav .navigation-bar .hamburger-menu i {
+  font-size: 4px;
+}
+
+header nav .navigation-bar button {
+  background-color: #5fcf80;
+  color: white;
+  font-size: 15px;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+header nav .navigation-bar button:hover {
+  background-color: #3AC162;
+  color: white;
+}
+
+main .hero button {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 15px;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 1px solid white;
+}
+main .hero button:hover {
+  background-color: #5fcf80;
+  color: white;
+}
+main .hero button:hover {
+  border-color: #5fcf80;
+}
+main .whyus button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 15px;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+main .whyus button:hover {
+  background-color: white;
+  color: #5fcf80;
+}
+main .form button {
+  background-color: #5fcf80;
+  color: white;
+  font-size: 15px;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0;
+}
+main .form button:hover {
+  background-color: #3AC162;
+  color: white;
+}
+
+footer .top form button {
+  background-color: #5fcf80;
+  color: white;
+  font-size: 15px;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0;
+  left: 160px;
+}
+footer .top form button:hover {
+  background-color: #3AC162;
+  color: white;
+}
+
+footer .top {
+  padding: 60px 0 30px;
+  background-color: #F9FAF9;
+}
+footer .top .row > * {
+  margin-bottom: 10px;
+}
+footer .top h3, footer .top h4 {
+  font-family: "Raleway";
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+footer .top h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .top p {
+  color: #777;
+}
+footer .top .location {
+  width: 150px;
+  margin-bottom: 30px;
+}
+footer .top ul li {
+  padding: 5px 0;
+  font-size: 14px;
+}
+footer .top ul li a {
+  color: #777;
+}
+footer .top ul li a i {
+  color: #5fcf80;
+  font-size: 10px;
+}
+footer .top ul li a:hover {
+  color: #5fcf80;
+}
+footer .top form {
+  position: relative;
+}
+footer .top form input {
+  border: 1px solid #e0e5e2;
+  margin-top: 30px;
+  padding: 6px 10px;
+  border-radius: 50px;
+  background-color: white;
+  outline: none;
+}
+footer .bottom-part {
+  background-color: #EEF0EF;
+  padding: 20px 0;
+}
+footer .bottom-part .media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .bottom-part .media .copyright p span {
+  color: #5fcf80;
+}
+footer .bottom-part .media ul {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+footer .bottom-part .media ul li a {
+  transition: 0.3s;
+  background-color: #5fcf80;
+  color: white;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+footer .bottom-part .media ul li a:hover {
+  background-color: #3AC162;
+}
+
+main .hero {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  color: white;
+  background: url("../../media/images/course-1.jpg") !important;
+  background-attachment: fixed;
+  background-size: cover;
+}
+main .hero .all {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main .hero .all .container {
+  background-color: coral;
+  height: 100%;
+}
+main .hero .all .container .hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
+main .hero .all .container .hero-info h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .hero .all .container .hero-info h2 {
+  font-family: "Raleway";
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+main .about {
+  padding: 60px 0;
+}
+main .about h3 {
+  font-family: "Raleway";
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+main .about p {
+  font-size: 16px;
+}
+main .about p:first-of-type {
+  margin-bottom: 16px;
+  font-style: italic;
+}
+main .about p:last-of-type {
+  margin-top: 10px;
+}
+main .about ul li {
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+main .about ul li i {
+  color: #5fcf80;
+}
+main .about img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 992px) {
+  main .about .rowColumnReverse {
+    flex-direction: column-reverse;
+  }
+}
+main .numbers {
+  padding: 30px 0;
+  background-color: #F6F7F6;
+}
+main .numbers .row > * {
+  flex-direction: column;
+}
+main .numbers .num {
+  color: #5fcf80;
+  font-weight: bold;
+  font-size: 48px;
+}
+main .numbers .p {
+  font-family: "Raleway";
+  color: #37423b;
+}
+main .whyus {
+  padding: 70px 0;
+}
+main .whyus .why-card {
+  background-color: #5fcf80;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  height: 400px;
+  padding: 25px;
+}
+main .whyus .why-card h3 {
+  font-weight: 700;
+  font-family: "Raleway";
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+main .whyus .why-card p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+main .whyus .iconCard {
+  margin: 0;
+}
+main .whyus .iconCard > div {
+  height: 100%;
+  padding: 40px 30px;
+  border: 1px solid #eef0ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .whyus .iconCard .icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  color: #5fcf80;
+  background-color: #ecf9f0;
+  margin-bottom: 30px;
+}
+main .whyus .iconCard .icon i {
+  font-size: 32px;
+}
+main .whyus .iconCard h4 {
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 30px;
+}
+main .whyus .iconCard p {
+  color: #343434;
+}
+main .boxes {
+  padding-bottom: 60px;
+}
+main .boxes .row > div {
+  padding: 0 12px;
+}
+main .boxes .row > div .box {
+  border: 1px solid #eef0ef;
+  color: #37423b;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main .boxes .row > div .box .icon {
+  color: #ffbb2c;
+}
+main .boxes .row > div .box .icon i {
+  font-size: 32px;
+}
+main .boxes .row > div .box h6 {
+  font-family: "Raleway";
+  font-size: 16px;
+}
+main .boxes .row > div .box:hover {
+  color: #5fcf80;
+  border-color: #5fcf80;
+}
+main .popularCourses {
+  padding-bottom: 60px;
+}
+main .popularCourses .row > div {
+  padding: 0 10px;
+}
+main .popularCourses .row > div .courseCard {
+  border: 1px solid #eef0ef;
+}
+main .popularCourses .row > div .courseCard .topCard img {
+  width: 100%;
+  height: 100%;
+}
+main .popularCourses .row > div .courseCard .bottomCard {
+  padding: 15px;
+}
+main .popularCourses .row > div .courseCard .bottomCard .badgePrice {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+main .popularCourses .row > div .courseCard .bottomCard .badgePrice .badge {
+  display: flex;
+  align-items: center;
+  background-color: #5fcf80;
+  color: white;
+  font-size: 14px;
+  font-family: "Raleway";
+  padding: 7px 14px;
+}
+main .popularCourses .row > div .courseCard .bottomCard .badgePrice .price {
+  font-size: 18px;
+  color: #37423b;
+  font-weight: 700;
+}
+main .popularCourses .row > div .courseCard .bottomCard h4 {
+  transition: 0.3s;
+  color: #37423b;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+main .popularCourses .row > div .courseCard .bottomCard h4:hover {
+  color: #5fcf80;
+}
+main .popularCourses .row > div .courseCard .bottomCard p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+main .popularCourses .row > div .courseCard .bottomCard .authorInfo {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .popularCourses .row > div .courseCard .bottomCard .authorInfo > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .popularCourses .row > div .courseCard .bottomCard .authorInfo .profilePhoto {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+main .popularCourses .row > div .courseCard .bottomCard .authorInfo .profilePhoto img {
+  width: 100%;
+  height: 100%;
+}
+main .popularCourses .row > div .courseCard .bottomCard .authorInfo h3 {
+  font-size: 16px;
+  margin-left: 10px;
+}
+main .trainers {
+  padding-bottom: 60px;
+}
+main .trainers .row > div {
+  padding: 0 10px;
+}
+main .trainers .row > div .trainerCard {
+  border: 1px solid #eef0ef;
+}
+main .trainers .row > div .trainerCard .topCard img {
+  width: 100%;
+  height: 100%;
+}
+main .trainers .row > div .trainerCard .bottomCard {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .trainers .row > div .trainerCard .bottomCard h3 {
+  color: #444;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+main .trainers .row > div .trainerCard .bottomCard h4 {
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: #444;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+main .trainers .row > div .trainerCard .bottomCard p {
+  font-size: 14px;
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 16px;
+}
+main .trainers .row > div .trainerCard .bottomCard ul {
+  display: flex;
+  gap: 10px;
+}
+main .trainers .row > div .trainerCard .bottomCard ul li {
+  color: #aaa;
+  font-size: 18px;
+}
+main .trainers .row > div .trainerCard .bottomCard ul li:hover {
+  color: #5fcf80;
+}
+
+main .contactUs {
+  background-color: #5fcf80;
+  color: white;
+  padding: 103px 12px 30px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+main .contactUs h1 {
+  font-family: "Raleway";
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+main .contactUs p {
+  font-size: 15px;
+  padding: 0 13%;
+}
+main .form {
+  padding: 30px 0;
+}
+main .form .leftSide {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+main .form .leftSide > div {
+  display: flex;
+  gap: 10px;
+}
+main .form .leftSide > div .icon {
+  transition: 0.3s;
+  color: #5fcf80;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ecf9f0;
+}
+main .form .leftSide > div .info {
+  display: flex;
+  flex-direction: column;
+}
+main .form .leftSide > div .info h4 {
+  font-size: 22px;
+  font-family: "Raleway";
+  color: #37423b;
+}
+main .form .leftSide > div .info p {
+  font-size: 14px;
+  color: #657a6d;
+}
+main .form .leftSide > div:hover .icon {
+  background-color: #5fcf80;
+  color: white;
+}
+main .form .rightSide {
+  text-align: center;
+}
+main .form .rightSide .row > div input, main .form .rightSide .row > div textarea {
+  color: #444;
+  width: 100%;
+  height: 100%;
+  padding: 6px 12px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+main .form .rightSide .row > div input:focus, main .form .rightSide .row > div textarea:focus {
+  border-color: #5fcf80;
+}
+main .form .rightSide .row > div input textarea, main .form .rightSide .row > div textarea textarea {
+  resize: horizontal;
+}
+
+.events {
+  background-color: #5fcf80;
+  color: white;
+  padding: 103px 12px 30px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.events h1 {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.events p {
+  font-size: 15px;
+  padding: 0 13%;
+}
+
+.eventCards {
+  padding: 60px 0;
+}
+.eventCards .row > div {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.eventCards .row > div .eventCard .topCard {
+  overflow: hidden;
+}
+.eventCards .row > div .eventCard .topCard img {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+}
+.eventCards .row > div .eventCard .cardBody {
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 90%;
+  margin: -30px auto 0;
+  padding: 30px;
+  transition: 0.3s;
+  border-top: 5px solid rgba(0, 0, 0, 0);
+  background-color: white;
+}
+.eventCards .row > div .eventCard .cardBody h3 {
+  margin-bottom: 16px;
+  font-family: "Raleway";
+  font-size: 20px;
+  color: #37423b;
+}
+.eventCards .row > div .eventCard .cardBody h4 {
+  margin-bottom: 16px;
+  font-family: "Raleway";
+  font-size: 16px;
+  color: #37423b;
+}
+.eventCards .row > div .eventCard:hover img {
+  transform: scale(1.2);
+}
+.eventCards .row > div .eventCard:hover .cardBody {
+  border-top: 5px solid #5fcf80;
+}
+.eventCards .row > div .eventCard:hover h3 {
+  color: #5fcf80;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,313 @@
+main{
+    .hero{
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        color: $light-color;
+        background: url("../../media/images/course-1.jpg") !important;
+        background-attachment: fixed;
+        background-size: cover;
+        .all{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            .container{
+                // background ishlemir foto gorunmur yazilar bilinsin deye color add eledim
+                background-color: coral;
+                height: 100%;
+                .hero-info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    height: 100%;
+                    h1{
+                        font-size: 48px;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+                    h2{
+                        font-family: "Raleway";
+                        font-size: 24px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        padding: 60px 0;
+        h3{
+            font-family:"Raleway";
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+        p{
+            font-size: 16px;
+            &:first-of-type{
+                margin-bottom: 16px;
+                font-style: italic;
+            }
+            &:last-of-type{
+                margin-top: 10px;
+            }
+        }
+        ul{
+            li{
+                padding-bottom: 10px;
+                font-size: 16px;
+                i{
+                    color: $primary-color;
+                }
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .rowColumnReverse{
+            @media only screen and (max-width: 992px) {
+                flex-direction: column-reverse;
+              }
+        }
+    }
+    .numbers{
+        padding: 30px 0;
+        background-color: #F6F7F6;
+        .row>*{
+            @extend %flex-elements-center;
+            flex-direction: column;
+            
+        }
+        .num{
+            color: $primary-color;
+            font-weight: bold;
+            font-size: 48px;
+        }
+        .p{
+            font-family: "Raleway";
+            color:#37423b;
+        }
+    }
+    .whyus{
+        padding: 70px 0;
+        .why-card{
+            background-color: $primary-color;
+            color: $light-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            height: 400px;
+            padding: 25px;
+            h3{
+                font-weight: 700;
+                font-family:"Raleway";
+                font-size: 34px;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+        }
+        .iconCard{
+            margin: 0;
+            &>div{
+                height: 100%;
+                padding: 40px 30px;
+                border: 1px solid #eef0ef;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .icon{
+                @extend %flex-elements-center;
+                width: 68px;
+                height: 68px;
+                border-radius: 50%;
+                color: $primary-color;
+                background-color: #ecf9f0;
+                margin-bottom: 30px;
+                i{
+                    font-size: 32px;
+                }
+            }
+            h4{
+                font-family: "Raleway";
+                font-size: 20px;
+                font-weight: 700;
+                color: #444;
+                margin-bottom: 30px;
+            }
+            p{
+                color: #343434;
+
+            }
+        }
+    }
+    .boxes{
+        padding-bottom: 60px;
+        .row>div{
+            padding: 0 12px;
+            
+            .box{
+                border: 1px solid #eef0ef;
+                color: #37423b;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .icon{
+                    color: #ffbb2c;
+                    i{
+                        font-size: 32px;
+                    }
+                }
+                h6{
+                    font-family: "Raleway";
+                    font-size: 16px;
+                }
+                &:hover{
+                    color: $primary-color;
+                    border-color: $primary-color;
+                }
+            }
+        }
+        
+    }
+    .popularCourses{
+        padding-bottom: 60px;
+        .row>div{
+            padding: 0 10px;
+            .courseCard{
+                border: 1px solid #eef0ef;
+                .topCard{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .bottomCard{
+                    padding: 15px;
+                    .badgePrice{
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        .badge{
+                            display: flex;
+                            align-items: center;
+                            background-color: $primary-color;
+                            color: $light-color;
+                            font-size: 14px;
+                            font-family: "Raleway";
+                            padding: 7px 14px;
+                        }
+                        .price{
+                            font-size: 18px;
+                            color: #37423b;
+                            font-weight: 700;
+
+                        }
+
+                    }
+                    h4{
+                        transition: .3s;
+                        color: #37423b;
+                        font-family: "Raleway";
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-bottom: 16px;
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        color: #777;
+                        margin-bottom: 8px;
+                    }
+                    .authorInfo{
+                        padding: 10px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        &>div{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                        .profilePhoto{
+                            height: 50px;
+                            width: 50px;
+                            overflow: hidden;
+                            border-radius: 50%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        h3{
+                            font-size: 16px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .trainers{
+        padding-bottom: 60px;
+        .row>div{
+            padding: 0 10px;
+            .trainerCard{
+                border: 1px solid #eef0ef;
+
+                .topCard{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .bottomCard{
+                    padding: 30px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h3{
+                        color: #444;
+                        font-family: "Raleway";
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-bottom: 2px;
+                    }
+                    h4{
+                        font-size: 13px;
+                        font-family: "Open Sans";
+                        color: #444;
+                        font-style: italic;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-style: italic;
+                        color: #aaa;
+                        margin-bottom: 16px;
+                    }
+                    ul{
+                        display: flex;
+                        gap: 10px;
+                        li{
+                            color: #aaa;
+                            font-size: 18px;
+                            &:hover{
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

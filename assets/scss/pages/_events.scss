@@ -1,0 +1,70 @@
+    .events{
+        background-color: $primary-color;
+        color: $light-color;
+        padding: 103px 12px 30px;
+        margin-bottom: 5px;
+        text-align: center;
+        h1{
+            font-family: "Raleway";
+            font-weight: 500;
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        p{
+            font-size: 15px;
+            padding: 0 13%;
+        }
+    }
+    .eventCards{
+        padding: 60px 0;
+        .row>div{
+            padding: 0 20px;
+            margin-bottom: 30px;
+            .eventCard{
+                .topCard{
+                    overflow: hidden;
+                    img{
+                        transition: .5s;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .cardBody{
+                    height: 100%;
+                    text-align: center;
+                    position: relative;
+                    z-index: 100;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    width: 90%;
+                    margin: -30px auto 0;
+                    padding: 30px;
+                    transition: .3s;
+                    border-top: 5px solid #0000;
+                    background-color: $light-color;
+                    h3{
+                        margin-bottom: 16px;
+                        font-family: "Raleway";
+                        font-size: 20px;
+                        color: #37423b;
+                    }
+                    h4{
+                        margin-bottom: 16px;
+                        font-family: "Raleway";
+                        font-size: 16px;
+                        color: $text-color;
+                    }
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.2);
+                    }
+                    .cardBody{
+                        border-top: 5px solid $primary-color;
+                    }
+                    h3{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }

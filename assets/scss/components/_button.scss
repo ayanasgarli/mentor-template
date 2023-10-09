@@ -1,0 +1,39 @@
+header nav .navigation-bar button{
+    @include btn($primary-color,$light-color,$primary-hover-color);
+    white-space: nowrap;
+}
+main{
+    .hero{
+        button{
+            @include btn(#0000,$light-color,$primary-color);
+            border: 1px solid $light-color;
+            &:hover{
+                border-color: $primary-color
+            }
+        }
+    }
+    .whyus{
+        button{
+            @include btn(#FFF3,$light-color,$light-color,$primary-color);
+        }
+    }
+    .form{
+        button{
+            @include btn($primary-color,$light-color,$primary-hover-color);
+            margin: 10px 0;
+        }
+    }
+}
+footer{
+    .top{
+        form{
+            button{
+                @include btn($primary-color,$light-color,$primary-hover-color);
+                position: absolute;
+                bottom: 0;
+                left:160px;
+            }
+        }
+    }
+}
+

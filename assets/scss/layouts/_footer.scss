@@ -1,0 +1,90 @@
+footer{
+    .top{
+        padding: 60px 0 30px;
+        background-color: #F9FAF9;
+        .row>*{
+            margin-bottom: 10px;
+        }
+        h3,h4{
+            font-family: "Raleway";
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        h4{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        p{
+            color: #777;
+        }
+        .location{
+            width: 150px;
+            margin-bottom: 30px;
+        }
+        ul{
+            li{
+                padding: 5px 0;
+                font-size: 14px;
+                a{
+                    color: #777;
+                    i{
+                        color: $primary-color;
+                        font-size: 10px;
+                    }
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        form{
+            position: relative;
+            input{
+                border: 1px solid #e0e5e2;
+                margin-top: 30px;
+                padding: 6px 10px;
+                border-radius: 50px;
+                background-color: $light-color;
+                outline: none;
+            }
+
+        }
+
+    }
+
+    .bottom-part{
+        background-color: #EEF0EF;
+        padding: 20px 0;
+        .media{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .copyright{
+                p{
+                    span{
+                        color: $primary-color;
+                    }
+                }
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                li{
+                    a{
+                        @extend %flex-elements-center;
+                        transition: .3s;
+                        background-color: $primary-color;
+                        color: $light-color;
+                        height: 36px;
+                        width: 36px;
+                        border-radius: 50%;
+                        &:hover{
+                            background-color: $primary-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
